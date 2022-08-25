@@ -60,5 +60,5 @@ Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.
 - Singleton pattern: https://en.wikipedia.org/wiki/Singleton_pattern
 - Fork: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 - HTTP Status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-- HTTP methods: 
-- Swagger: 
+- HTTP methods: https://en.wikipedia.org/wiki/Representational_state_transfer#Semantics_of_HTTP_methods
+- Swagger: https://swagger.io/
