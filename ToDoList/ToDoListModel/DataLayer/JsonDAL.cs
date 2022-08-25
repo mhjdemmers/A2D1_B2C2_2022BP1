@@ -96,7 +96,6 @@ namespace ToDoListModel.DataLayer
             {
                 throw;
             }
-            return false;
         }
 
         public ToDoTask ReadToDoTask(int id)
