@@ -18,7 +18,7 @@ Dit is het programma dat momenteel alle CRUD operaties een keer uitvoert.
 <filmpje>
 
 ## Opdracht
-Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in die <filmpje>
+Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in het filmpje. <filmpje>
   
 ### Om te beginnen
 1.  Maak een fork van de repository door rechtsboven op de knop "Fork" te klikken en de stappen te doorlopen. Je hebt nu een kopie gemaakt van de repository in je eigen Github account.
