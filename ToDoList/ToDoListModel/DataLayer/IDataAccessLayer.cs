@@ -7,7 +7,8 @@ using ToDoListModel.Models;
 namespace ToDoListModel.DataLayer
 {
     /// <summary>
-    /// Interface for the dataaccesslayer
+    /// Interface for the data access layer
+    /// Zie voor meer info: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface
     /// </summary>
     public interface IDataAccessLayer
     {
