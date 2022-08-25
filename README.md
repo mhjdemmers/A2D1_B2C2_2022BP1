@@ -27,9 +27,19 @@ Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit t
 3.  Bekijk de code op basis van bovenstaande uitleg. Zorg dat je snapt welke componenten er zijn en hoe het werkt. Voer de console applicatie uit en kijk of alles naar wens werkt.
 
 ### Maak de API
-Zie ook het filmpje
+Zie ook het filmpje.
 1. Maak een nieuw project in je solution. Kies voor "ASP.NET Core Web API". Let op dat je C# kiest! Geef het project een passende naam, bijvoorbeeld "ToDoAPI". Verander niets aan de standaard instellingen voor het project. 
-2. Zoek in je solution het nieuwe project op en klik met je rechtermuisknop. Kies voor "Set as startup project". Als de oplossing nu gestart wordt, zal dit het project zijn wat wordt uitgevoerd. De API zal dus starten. Valideer of dit gebeurt.
+2. Zoek in je solution het nieuwe project op en klik met je rechtermuisknop. Kies voor "Set as startup project". Als de oplossing nu gestart wordt, zal dit het project zijn wat wordt uitgevoerd. De API zal dus starten. Valideer of dit gebeurt. 
+3. Onderzoek welke componenten er zijn aangemaakt in je nieuwe project. Zorg dat je begrijpt waar alles voor dient.
+4. Rechtermuisklik op de "Controllers" map en voeg een controller class toe. Kies voor "API Controller with read/write actions". Geef de controller een passende naam zoals "ToDoController". Naamgeving conventions geven aan dat je moet besluiten met "Controller".
+5. Voer je applicatie opnieuw uit en zie in de Swagger UI dat je nieuwe controller mét endpoints meteen herkend worden. Er zit echter nog geen logica in de API, dus er zal nog niets zinvols gebeuren als je ze aanroept.
+6. Implementeer de gegenereerde methods zodanig dat je bestaande model (Project ToDoListModel) wordt gebruikt.
+7. Test de API.
+
+
+
+### Verdieping authenticatie
+1. Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/authentication-and-authorization-in-aspnet-web-api) 
 
 ## Verder lezen
 - Json: https://www.json.org/json-en.html
