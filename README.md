@@ -18,6 +18,11 @@ Hierin staat de enige entiteit van deze applicatie. Het is een class uitgewerkt 
 Dit is het programma wat momenteel alle CRUD operaties een keer uitvoert.
 
 
+## Opdracht
+Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. 
+1.  fdgfg
+
+
 ## Verder lezen
 - Json: https://www.json.org/json-en.html
 - Interface: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface
