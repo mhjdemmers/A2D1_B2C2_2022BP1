@@ -2,7 +2,8 @@
 Deze repository wordt gebruikt om een aantal voorbeelden te delen voor de vakken A2D1 en B2C2 (Web development).
 
 # API: ToDoList
-In de map ToDOList is een eenvoudige applicatie te vinden. Met deze applicatie is het mogelijk een ToDoList bij te houden. De applicatie is ontwikkeld in .NET core 6.0. Dit is een voorbeeld van hoe een applicatie eruit zou kunnen zien in lagen. 
+In de map ToDoList is een eenvoudige applicatie te vinden. Met deze applicatie is het mogelijk een ToDoList bij te houden. De applicatie is ontwikkeld in .NET core 6.0. Dit is een voorbeeld van hoe een applicatie eruit zou kunnen zien in lagen. 
+Zie laatste hoofdstuk hieronder met "verder lezen" links over diverse onderwerpen uit deze opdracht.
 
 ## Uitleg bestaande appplicatie
 ### DataLayer
@@ -35,9 +36,9 @@ Zie ook het filmpje.
 5. Voer je applicatie opnieuw uit en zie in de Swagger UI dat je nieuwe controller mét endpoints meteen herkend worden. Er zit echter nog geen logica in de API, dus er zal nog niets zinvols gebeuren als je ze aanroept.
 6. Ga naar de dependencies van het ToDoAPI project en voeg een project reference toe naar het ToDoListModel.
 7. Implementeer de gegenereerde methods zodanig dat je bestaande model (Project ToDoListModel) wordt gebruikt.
-8. Test de API.
+8. Maak extra endpoints om een taak aan iemand te assignen en om een taak te finishen.
+8. Test de API met Swagger UI.
 
-post voor acties
 
 ### Verdieping statuscodes
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
