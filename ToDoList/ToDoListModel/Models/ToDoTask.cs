@@ -34,7 +34,7 @@ namespace ToDoListModel.Models
         /// <summary>
         /// Timestamp of task finished. Empty is task still open
         /// </summary>
-        public DateTime? DateTimeFinsihed { get; set; }
+        public DateTime? DateTimeFinished { get; set; }
 
         #endregion
 
@@ -51,7 +51,7 @@ namespace ToDoListModel.Models
             Description = description;
             AssignedName = string.Empty;
             DateTimeCreated = DateTime.Now;
-            DateTimeFinsihed = null;
+            DateTimeFinished = null;
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace ToDoListModel.Models
         /// <returns></returns>
         public bool AssignPerson(string name)
         {
-            if (DateTimeFinsihed == null)
+            if (DateTimeFinished == null)
             {
                 AssignedName = name;
                 this.Update();
@@ -78,7 +78,7 @@ namespace ToDoListModel.Models
         /// </summary>
         public void FinishTask()
         {
-            DateTimeFinsihed = DateTime.Now;
+            DateTimeFinished = DateTime.Now;
             this.Update();
         }
 
@@ -146,7 +146,7 @@ namespace ToDoListModel.Models
         public void Delete()
         {
             // controles vinden hier plaats, bv voorwaarden of ik mag deleten
-            if (this.DateTimeFinsihed == null)
+            if (this.DateTimeFinished == null)
             {
                 throw new Exception("Alleen afgeronde taken mogen verwijderd worden!");
             }
