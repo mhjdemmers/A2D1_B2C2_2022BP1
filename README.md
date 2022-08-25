@@ -27,7 +27,9 @@ Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit t
 3.  Bekijk de code op basis van bovenstaande uitleg. Zorg dat je snapt welke componenten er zijn en hoe het werkt. Voer de console applicatie uit en kijk of alles naar wens werkt.
 
 ### Maak de API
-
+Zie ook het filmpje
+1. Maak een nieuw project in je solution. Kies voor "ASP.NET Core Web API". Let op dat je C# kiest! Geef het project een passende naam, bijvoorbeeld "ToDoAPI". Verander niets aan de standaard instellingen voor het project. 
+2. Zoek in je solution het nieuwe project op en klik met je rechtermuisknop. Kies voor "Set as startup project". Als de oplossing nu gestart wordt, zal dit het project zijn wat wordt uitgevoerd. De API zal dus starten. Valideer of dit gebeurt.
 
 ## Verder lezen
 - Json: https://www.json.org/json-en.html
