@@ -20,11 +20,18 @@ Dit is het programma wat momenteel alle CRUD operaties een keer uitvoert.
 
 ## Opdracht
 Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. 
-1.  fdgfg
+
+### Om te beginnen
+1.  Maak een fork van de repository door rechtsboven op de knop "Fork" te klikken en de stappen te doorlopen. Je hebt nu een kopie gemaakt van de repository in je eigen Github account.
+2.  Haal de code binnen in Visual Studio door op "Code" > "Open in Visual Studio" te klikken.
+3.  Bekijk de code op basis van bovenstaande uitleg. Zorg dat je snapt welke componenten er zijn en hoe het werkt. Voer de console applicatie uit en kijk of alles naar wens werkt.
+
+### Maak de API
 
 
 ## Verder lezen
 - Json: https://www.json.org/json-en.html
 - Interface: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface
 - Singleton pattern: https://en.wikipedia.org/wiki/Singleton_pattern
+- Fork: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 
