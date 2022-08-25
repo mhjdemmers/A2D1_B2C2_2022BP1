@@ -33,10 +33,15 @@ Zie ook het filmpje.
 3. Onderzoek welke componenten er zijn aangemaakt in je nieuwe project. Zorg dat je begrijpt waar alles voor dient.
 4. Rechtermuisklik op de "Controllers" map en voeg een controller class toe. Kies voor "API Controller with read/write actions". Geef de controller een passende naam zoals "ToDoController". Naamgeving conventions geven aan dat je moet besluiten met "Controller".
 5. Voer je applicatie opnieuw uit en zie in de Swagger UI dat je nieuwe controller mét endpoints meteen herkend worden. Er zit echter nog geen logica in de API, dus er zal nog niets zinvols gebeuren als je ze aanroept.
-6. Implementeer de gegenereerde methods zodanig dat je bestaande model (Project ToDoListModel) wordt gebruikt.
-7. Test de API.
+6. Ga naar de dependencies van het ToDoAPI project en voeg een project reference toe naar het ToDoListModel.
+7. Implementeer de gegenereerde methods zodanig dat je bestaande model (Project ToDoListModel) wordt gebruikt.
+8. Test de API.
 
+post voor acties
 
+### Verdieping statuscodes
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+object teruggeven en statuscode
 
 ### Verdieping authenticatie
 1. Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/authentication-and-authorization-in-aspnet-web-api) 
@@ -46,4 +51,6 @@ Zie ook het filmpje.
 - Interface: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface
 - Singleton pattern: https://en.wikipedia.org/wiki/Singleton_pattern
 - Fork: https://docs.github.com/en/get-started/quickstart/fork-a-repo
-
+- HTTP Status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+- HTTP methods: 
+- Swagger: 
