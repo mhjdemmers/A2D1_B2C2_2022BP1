@@ -1,6 +1,3 @@
-# A2D1_B2C2_2022BP1
-Deze repository wordt gebruikt om een aantal voorbeelden te delen voor de vakken A2D1 en B2C2 (Web development).
-
 # API: ToDoList
 In de map ToDoList is een eenvoudige applicatie te vinden. Met deze applicatie is het mogelijk een ToDoList bij te houden. De applicatie is ontwikkeld in .NET core 6.0. Dit is een voorbeeld van hoe een applicatie eruit zou kunnen zien in lagen. 
 Zie laatste hoofdstuk hieronder met "verder lezen" links over diverse onderwerpen uit deze opdracht.
@@ -18,15 +15,16 @@ Hierin staat de enige entiteit van deze applicatie. Het is een class uitgewerkt 
 ### Program.cs
 Dit is het programma wat momenteel alle CRUD operaties een keer uitvoert.
 
+<filmpje>
 
 ## Opdracht
-Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. 
-
+Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in die <filmpje>
+  
 ### Om te beginnen
 1.  Maak een fork van de repository door rechtsboven op de knop "Fork" te klikken en de stappen te doorlopen. Je hebt nu een kopie gemaakt van de repository in je eigen Github account.
 2.  Haal de code binnen in Visual Studio door op "Code" > "Open in Visual Studio" te klikken.
 3.  Bekijk de code op basis van bovenstaande uitleg. Zorg dat je snapt welke componenten er zijn en hoe het werkt. Voer de console applicatie uit en kijk of alles naar wens werkt.
-
+  
 ### Maak de API
 Zie ook het filmpje.
 1. Maak een nieuw project in je solution. Kies voor "ASP.NET Core Web API". Let op dat je C# kiest! Geef het project een passende naam, bijvoorbeeld "ToDoAPI". Verander niets aan de standaard instellingen voor het project. 
@@ -39,13 +37,18 @@ Zie ook het filmpje.
 8. Maak extra endpoints om een taak aan iemand te assignen en om een taak te finishen.
 8. Test de API met Swagger UI.
 
-
 ### Verdieping statuscodes
-https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-object teruggeven en statuscode
+Als je HTTP gebruikt heeft elk request een statuscode. Zie hier een lijst met statuscodes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+1. Pas je endpoint aan zodat het aangemaakte object wordt teruggegeven en je een bijbehorende statuscode krijgt te zien.
+<filmpje>
+
+### Verdieping API aanroepen
+We hebben de API nu aangeroepen met de Swagger UI. In de praktijk zal een API aangeroepen worden door een ander systeem, bijvoorbeeld een frontend (web, mobile) of een andere applicatie.
+Probeer de applicatie Postman eens om de API aan te roepen: 
+Implementeer zelf een eenvoudige (console) applicatie die de API aanroept: https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client
 
 ### Verdieping authenticatie
-1. Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/authentication-and-authorization-in-aspnet-web-api) 
+Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/authentication-and-authorization-in-aspnet-web-api). Implementeer dit zelf of probeer een nieuw API project aan te maken met authenticatie (vinkje bij maken van project). Kijk wat er gebeurt.
 
 ## Verder lezen
 - Json: https://www.json.org/json-en.html
