@@ -41,7 +41,8 @@ Zie ook het filmpje.
 8. Test de API met Swagger UI.
 
 ### Verdieping statuscodes
-Als je HTTP gebruikt heeft elk request een statuscode. Zie hier een lijst met statuscodes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+Als je HTTP gebruikt heeft elk request een statuscode. Zie hier een lijst met statuscodes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes Zie ook https://docs.microsoft.com/en-us/dotnet/api/system.net.httpstatuscode?view=net-6.0
+Zie deze documentatie voor de how-to: https://docs.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-6.0
 1. Pas je endpoint aan zodat het aangemaakte object wordt teruggegeven en je een bijbehorende statuscode krijgt te zien.
 <filmpje>
 
