@@ -14,9 +14,9 @@ namespace ToDoListModel.DataLayer
         /// <summary>
         /// Persist the task in the datastore
         /// </summary>
-        /// <param name="ToDoTask">The task to persist</param>
+        /// <param name="toDoTask">The task to persist</param>
         /// <returns>The persisted task</returns>
-        public ToDoTask CreateToDoTask(ToDoTask ToDoTask);
+        public ToDoTask CreateToDoTask(ToDoTask toDoTask);
         /// <summary>
         /// Read a specific task from the datastore
         /// </summary>
@@ -31,14 +31,14 @@ namespace ToDoListModel.DataLayer
         /// <summary>
         /// Update the task in the datastore
         /// </summary>
-        /// <param name="ToDoTask">The task to update</param>
+        /// <param name="toDoTask">The task to update</param>
         /// <returns>The updated task</returns>
-        public ToDoTask UpdateToDoTask(ToDoTask ToDoTask);
+        public ToDoTask UpdateToDoTask(ToDoTask toDoTask);
         /// <summary>
         /// Delete the task fropm the datastore
         /// </summary>
-        /// <param name="ToDoTask">The task to delete</param>
+        /// <param name="toDoTask">The task to delete</param>
         /// <returns>True on success</returns>
-        public bool DeleteToDoTask(ToDoTask ToDoTask);
+        public bool DeleteToDoTask(ToDoTask toDoTask);
     }
 }

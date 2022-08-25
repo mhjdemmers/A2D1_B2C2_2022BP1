@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace ToDoListModel.DataLayer
 {
-    public sealed class DAL
+    /// <summary>
+    /// Singleton class for the DAL
+    /// More info: https://en.wikipedia.org/wiki/Singleton_pattern
+    /// </summary>
+    public sealed class DALSingleton
     {
         private static IDataAccessLayer instance = null;
         private static readonly object padlock = new object();
 
-        public DAL()
+        public DALSingleton()
         {
         }
 
@@ -23,9 +27,8 @@ namespace ToDoListModel.DataLayer
                 {
                     if (instance == null)
                     {
-                        //instance = new JsonDAL();
-                        instance = null; // todo maken
-
+                        // maak hier eventueel een andere dal aan
+                        instance = new JsonDAL();
                     }
                     return instance;
                 }

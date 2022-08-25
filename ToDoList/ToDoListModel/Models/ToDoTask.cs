@@ -42,12 +42,10 @@ namespace ToDoListModel.Models
 
         /// <summary>
         /// Constructor of the task
-        /// </summary>
-        /// <param name="id">Id of the task</param>
+        /// </summary>        
         /// <param name="description">Description of the task</param>
-        public ToDoTask(int id, string description)
+        public ToDoTask(string description)
         {
-            Id = id;
             Description = description;
             AssignedName = string.Empty;
             DateTimeCreated = DateTime.Now;
@@ -97,7 +95,7 @@ namespace ToDoListModel.Models
                 throw new Exception("Kan geen taak aanmaken als de taak al een id heeft (taak bestaat al?)");
             }
 
-            IDataAccessLayer dal = DAL.Instance; 
+            IDataAccessLayer dal = DALSingleton.Instance; 
             var result = dal.CreateToDoTask(this);
             this.Id = result.Id;
         }
@@ -109,7 +107,7 @@ namespace ToDoListModel.Models
         /// <returns>The specific task</returns>
         public static ToDoTask Read(int id)
         {
-            IDataAccessLayer dal = DAL.Instance;
+            IDataAccessLayer dal = DALSingleton.Instance;
             return dal.ReadToDoTask(id);
         }
 
@@ -119,7 +117,7 @@ namespace ToDoListModel.Models
         /// <returns>List with all tasks</returns>
         public static List<ToDoTask> ReadAll()
         {
-            IDataAccessLayer dal = DAL.Instance;
+            IDataAccessLayer dal = DALSingleton.Instance;
             return dal.ReadToDoTasks();
         }
 
@@ -131,12 +129,12 @@ namespace ToDoListModel.Models
         private ToDoTask Update()
         {
             // controles vinden hier plaats
-            if (Id != 0)
+            if (Id == 0)
             {
                 throw new Exception("Kan geen taak updaten zonder id. Wellicht moet de taak eerst aangemaakt worden?");
             }
 
-            IDataAccessLayer dal = DAL.Instance;
+            IDataAccessLayer dal = DALSingleton.Instance;
             return dal.UpdateToDoTask(this);
         }
 
@@ -151,7 +149,7 @@ namespace ToDoListModel.Models
                 throw new Exception("Alleen afgeronde taken mogen verwijderd worden!");
             }
 
-            IDataAccessLayer dal = DAL.Instance;
+            IDataAccessLayer dal = DALSingleton.Instance;
             dal.DeleteToDoTask(this);
         }
 
