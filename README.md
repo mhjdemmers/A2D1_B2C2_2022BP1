@@ -13,7 +13,7 @@ Naast de DAL is er een IDataAccessLayer interface. Deze is gemaakt om in de toek
 Hierin staat de enige entiteit van deze applicatie. Het is een class uitgewerkt met properties en methods. De methods (gedrag) van de class beïnvloeden de properties (status). In je eigen applicatie zou dit ook zo uit moeten zien.
 
 ### Program.cs
-Dit is het programma wat momenteel alle CRUD operaties een keer uitvoert.
+Dit is het programma dat momenteel alle CRUD operaties een keer uitvoert.
 
 <filmpje>
 
