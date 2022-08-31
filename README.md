@@ -15,7 +15,7 @@ Hierin staat de enige entiteit van deze applicatie. Het is een class uitgewerkt 
 ### Program.cs
 Dit is het programma dat momenteel alle CRUD operaties een keer uitvoert.
 
-<filmpje>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Uh39jZkxyg4/0.jpg)](https://youtu.be/Uh39jZkxyg4)
 
 ## Opdracht
 Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in het filmpje. <filmpje>
