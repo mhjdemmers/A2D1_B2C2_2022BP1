@@ -66,3 +66,7 @@ Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.
 - HTTP Status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 - HTTP methods: https://en.wikipedia.org/wiki/Representational_state_transfer#Semantics_of_HTTP_methods
 - Swagger: https://swagger.io/
+
+- Alle videos: https://youtube.com/playlist?list=PLV3-439d8HgAlu3zYE61X4-qsfVz17xKL
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLV3-439d8HgApfmaIgF_jees3k1p2n7iB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
