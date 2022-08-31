@@ -17,6 +17,10 @@ Dit is het programma dat momenteel alle CRUD operaties een keer uitvoert.
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Uh39jZkxyg4/0.jpg)](https://youtu.be/Uh39jZkxyg4)
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Uh39jZkxyg4
+" target="_blank"><img src="http://img.youtube.com/vi/Uh39jZkxyg4/0.jpg" 
+alt="ToDoList app uitleg" width="240" height="180" border="10" /></a>
+
 ## Opdracht
 Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in het filmpje. <filmpje>
   
