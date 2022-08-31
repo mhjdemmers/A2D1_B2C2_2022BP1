@@ -15,10 +15,10 @@ Hierin staat de enige entiteit van deze applicatie. Het is een class uitgewerkt 
 ### Program.cs
 Dit is het programma dat momenteel alle CRUD operaties een keer uitvoert.
 
-<filmpje>
+[![ToDoList app uitleg](http://img.youtube.com/vi/Uh39jZkxyg4/0.jpg)](https://youtu.be/Uh39jZkxyg4)
 
 ## Opdracht
-Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in die <filmpje>
+Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit te doen voer je de volgende stappen uit. De stappen zijn ook te zien in het filmpje. <filmpje>
   
 ### Om te beginnen
 1.  Maak een fork van de repository door rechtsboven op de knop "Fork" te klikken en de stappen te doorlopen. Je hebt nu een kopie gemaakt van de repository in je eigen Github account.
@@ -26,9 +26,11 @@ Het is de bedoeling om voor deze bestaande applicatie een API te maken. Om dit t
 2.  Haal de code binnen in Visual Studio door op "Code" > "Open in Visual Studio" te klikken.
  ![Open code](OpenCodeOwnRepo.png)
 3.  Bekijk de code op basis van bovenstaande uitleg. Zorg dat je snapt welke componenten er zijn en hoe het werkt. Voer de console applicatie uit en kijk of alles naar wens werkt.
-  
+
+[![Maak een fork](http://img.youtube.com/vi/uIftNnKOjko/0.jpg)](https://youtu.be/uIftNnKOjko)
+
 ### Maak de API
-Zie ook het filmpje.
+Zie ook het filmpje onder.
 1. Maak een nieuw project in je solution. Kies voor "ASP.NET Core Web API". Let op dat je C# kiest! Geef het project een passende naam, bijvoorbeeld "ToDoAPI". Verander niets aan de standaard instellingen voor het project.
  ![Open code](CreateAPIProject.png)
 2. Zoek in je solution het nieuwe project op en klik met je rechtermuisknop. Kies voor "Set as startup project". Als de oplossing nu gestart wordt, zal dit het project zijn wat wordt uitgevoerd. De API zal dus starten. Valideer of dit gebeurt. 
@@ -39,6 +41,8 @@ Zie ook het filmpje.
 7. Implementeer de gegenereerde methods zodanig dat je bestaande model (Project ToDoListModel) wordt gebruikt.
 8. Maak extra endpoints om een taak aan iemand te assignen en om een taak te finishen.
 8. Test de API met Swagger UI.
+
+[![Maak een fork](http://img.youtube.com/vi/ypsychL0IE0/0.jpg)](https://youtu.be/ypsychL0IE0)
 
 ### Verdieping statuscodes
 Als je HTTP gebruikt heeft elk request een statuscode. Zie hier een lijst met statuscodes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes Zie ook https://docs.microsoft.com/en-us/dotnet/api/system.net.httpstatuscode?view=net-6.0
@@ -62,3 +66,6 @@ Onderzoek hoe je authenticatie kunt gebruiken op de API (https://docs.microsoft.
 - HTTP Status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 - HTTP methods: https://en.wikipedia.org/wiki/Representational_state_transfer#Semantics_of_HTTP_methods
 - Swagger: https://swagger.io/
+
+- Alle videos: https://youtube.com/playlist?list=PLV3-439d8HgAlu3zYE61X4-qsfVz17xKL
+ 
