@@ -12,8 +12,8 @@ namespace ToDoListModel.DataLayer
     /// </summary>
     public sealed class DALSingleton
     {
-        private static IDataAccessLayer instance = null;
-        private static readonly object padlock = new object();
+        private static IDataAccessLayer instance = null!;
+        private static readonly object padlock = new();
 
         public DALSingleton()
         {
@@ -25,11 +25,8 @@ namespace ToDoListModel.DataLayer
             {
                 lock(padlock)
                 {
-                    if (instance == null)
-                    {
-                        // maak hier eventueel een andere dal aan
-                        instance = new JsonDAL();
-                    }
+                    // maak hier eventueel een andere dal aan
+                    instance ??= new JsonDAL();
                     return instance;
                 }
             }

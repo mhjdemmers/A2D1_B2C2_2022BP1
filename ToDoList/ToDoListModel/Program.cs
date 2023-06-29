@@ -15,20 +15,23 @@ foreach (var task in ToDoTask.ReadAll())
 // ophalen specifieke taak
 Console.WriteLine();
 Console.WriteLine("Ophalen alleen taak 5");
-ToDoTask bestaandeTask = ToDoTask.Read(5);
-Console.WriteLine($"Id: {bestaandeTask.Id.ToString().PadLeft(5)}, Description: {bestaandeTask.Description.PadRight(30)}, Assigned:{bestaandeTask.AssignedName.PadRight(10)}, Created: {bestaandeTask.DateTimeCreated}, Finished: {bestaandeTask.DateTimeFinished}");
+ToDoTask? bestaandeTask = ToDoTask.Read(5);
+if (bestaandeTask != null)
+{
+    Console.WriteLine($"Id: {bestaandeTask.Id.ToString().PadLeft(5)}, Description: {bestaandeTask.Description.PadRight(30)}, Assigned:{bestaandeTask.AssignedName.PadRight(10)}, Created: {bestaandeTask.DateTimeCreated}, Finished: {bestaandeTask.DateTimeFinished}");
+    // update een taak
+    Console.WriteLine();
+    Console.WriteLine("Assign Rob aan de bierdrinken taak");
+    bestaandeTask.AssignPerson("Rob");
+    Console.WriteLine($"Id: {bestaandeTask.Id.ToString().PadLeft(5)}, Description: {bestaandeTask.Description.PadRight(30)}, Assigned:{bestaandeTask.AssignedName.PadRight(10)}, Created: {bestaandeTask.DateTimeCreated}, Finished: {bestaandeTask.DateTimeFinished}");
 
+}
 
-// update een taak
-Console.WriteLine();
-Console.WriteLine("Assign Rob aan de bierdrinken taak");
-bestaandeTask.AssignPerson("Rob");
-Console.WriteLine($"Id: {bestaandeTask.Id.ToString().PadLeft(5)}, Description: {bestaandeTask.Description.PadRight(30)}, Assigned:{bestaandeTask.AssignedName.PadRight(10)}, Created: {bestaandeTask.DateTimeCreated}, Finished: {bestaandeTask.DateTimeFinished}");
 
 // maak een taak
 Console.WriteLine();
 Console.WriteLine("We maken een nieuwe taak");
-ToDoTask nieuweTaak = new ToDoTask("Ramen lappen");
+ToDoTask nieuweTaak = new("Ramen lappen");
 nieuweTaak.Create();
 
 // ophalen alle taken
