@@ -45,7 +45,7 @@ namespace ToDoListModel.DataLayer
                 string file = File.ReadAllText(tasksFileName);
                 if (!string.IsNullOrEmpty(file))
                 {
-                    tasks = JsonSerializer.Deserialize<List<ToDoTask>?>(file);
+                    tasks = JsonSerializer.Deserialize<List<ToDoTask>>(file);
                 }
                 else
                 { 
