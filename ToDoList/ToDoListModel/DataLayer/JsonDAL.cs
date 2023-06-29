@@ -42,7 +42,15 @@ namespace ToDoListModel.DataLayer
         {
             try
             {
-                tasks = JsonSerializer.Deserialize<List<ToDoTask>>(File.ReadAllText(tasksFileName));
+                string file = File.ReadAllText(tasksFileName);
+                if (!string.IsNullOrEmpty(file))
+                {
+                    tasks = JsonSerializer.Deserialize<List<ToDoTask>?>(file);
+                }
+                else
+                { 
+                    tasks = new();
+                }
             }
             catch (Exception)
             {
