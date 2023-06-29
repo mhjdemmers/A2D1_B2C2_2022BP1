@@ -16,7 +16,7 @@ namespace ToDoListModel.DataLayer
         /// <summary>
         /// In memory list for the tasks
         /// </summary>
-        List<ToDoTask> tasks = new List<ToDoTask>();
+        List<ToDoTask> tasks = new();
         /// <summary>
         /// Name of the json file
         /// </summary>
@@ -98,7 +98,7 @@ namespace ToDoListModel.DataLayer
             }
         }
 
-        public ToDoTask ReadToDoTask(int id)
+        public ToDoTask? ReadToDoTask(int id)
         {
             return tasks.Find(x => x.Id == id);
         }
@@ -112,9 +112,11 @@ namespace ToDoListModel.DataLayer
         {
             // easiest is remove and add again
             var toDelete = tasks.Find(x => x.Id == toDoTask.Id);
-            tasks.Remove(toDelete);
-            tasks.Add(toDoTask);
-
+            if (toDelete != null)
+            {
+                tasks.Remove(toDelete);
+                tasks.Add(toDoTask);
+            }
             this.SaveToFile();
             return toDoTask;            
         }

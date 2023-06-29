@@ -105,7 +105,7 @@ namespace ToDoListModel.Models
         /// </summary>
         /// <param name="id">The id of the specific task</param>
         /// <returns>The specific task</returns>
-        public static ToDoTask Read(int id)
+        public static ToDoTask? Read(int id)
         {
             IDataAccessLayer dal = DALSingleton.Instance;
             return dal.ReadToDoTask(id);

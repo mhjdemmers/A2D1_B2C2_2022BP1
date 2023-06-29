@@ -23,7 +23,7 @@ namespace ToDoListModel.DataLayer
         /// </summary>
         /// <param name="id">The task to read</param>
         /// <returns>The specific task</returns>
-        public ToDoTask ReadToDoTask(int id);
+        public ToDoTask? ReadToDoTask(int id);
         /// <summary>
         /// Read all tasks from the datastore
         /// </summary>
