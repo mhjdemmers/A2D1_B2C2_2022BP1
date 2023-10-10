@@ -133,7 +133,6 @@ namespace ToDoListModel.Models
             {
                 throw new Exception("Kan geen taak updaten zonder id. Wellicht moet de taak eerst aangemaakt worden?");
             }
-
             IDataAccessLayer dal = DALSingleton.Instance;
             return dal.UpdateToDoTask(this);
         }
